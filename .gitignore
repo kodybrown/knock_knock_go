@@ -1,6 +1,6 @@
-*.conf
+./*.conf
+./*.json
 *.exe
-*.json
 
 
 ### windows
