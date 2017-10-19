@@ -9,19 +9,19 @@ import (
 )
 
 // Date represents the date and time the app was built.
-var Date = time.Date(2017, 7, 21, 11, 31, 45, 0, time.Local)
+var Date = time.Date(2017, 10, 19, 14, 25, 17, 0, time.Local)
 
-var Major    int32 = 0
-var Minor    int32 = 7
-var Build    int64 = 2017721
-var Revision int64 = 1131
+var Major    int32 = 1
+var Minor    int32 = 02
+var Build    int64 = 171019
+var Revision int64 = 1425
 
 // ShortString returns the full version: 'major.minor.date.time'.
 func ShortString() string {
-	return fmt.Sprintf("02d", Major, Minor)
+	return fmt.Sprintf("%d.%02d", Major, Minor)
 }
 
 // FullString returns the full version: 'major.minor.date.time'.
 func FullString() string {
-	return fmt.Sprintf("02d.:update_version6d.:update_version4d", Major, Minor, Build, Revision)
+	return fmt.Sprintf("%d.%02d.%06d.%04d", Major, Minor, Build, Revision)
 }
